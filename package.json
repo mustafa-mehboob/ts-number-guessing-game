@@ -1,0 +1,31 @@
+{
+  "name": "mustafa-ng-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "type": "module",
+  "bin": "./index.js",
+  "scripts": {
+    "test": "tsc && node inde.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mustafa-mehboob/ts-number-guessing-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mustafa-mehboob/ts-number-guessing-game/issues"
+  },
+  "homepage": "https://github.com/mustafa-mehboob/ts-number-guessing-game#readme",
+  "devDependencies": {
+    "@types/chalk-animation": "^1.6.1",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.11.9",
+    "chalk-animation": "^2.0.3"
+  },
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  }
+}
