@@ -6,4 +6,4 @@ Develop a simple command line calculator using [TypeScipt](https://www.typescrip
 
 Run the following command to experience a CLI game:
 
-        npx mustafa-ng-game
+    npx mustafa-ng-game
