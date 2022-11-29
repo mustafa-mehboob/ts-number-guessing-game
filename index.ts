@@ -67,7 +67,7 @@ let numFunc = async () => {
                     console.log(Chalk.yellowBright(`Hint less than or equal 5`));
                 }
                 else {
-                    console.log(Chalk.yellowBright(`Hint less grater 5`));
+                    console.log(Chalk.yellowBright(`Hint grater than 5`));
                 }
             }
 
