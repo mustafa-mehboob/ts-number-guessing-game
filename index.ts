@@ -36,11 +36,11 @@ let usrInput = async () => {
             message: Chalk.yellowBright("Guess number between 1 to 10")
         }
     ])
-    return await usrInput.userInput
+    return  usrInput.userInput
 }
 
 
-
+let score = 5;
 let numFunc = async () => {
 
     let numbers: Number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -49,18 +49,20 @@ let numFunc = async () => {
     for (let i = 4; i > 0; i--) {
 
         if (await usrInput() == randomNumber) {
-            console.log(Chalk.bgGray(`Congratulation ${usrName} you win`));
+            console.log(Chalk.bgGray(`Congratulation you win`));
+            console.log(Chalk.bgGray(`You score ${score}`))
             break
         }
 
         else {
 
             if (i > 3) {
+                score = score -1
                 console.log(`${i - 1} turn are left`);
             }
 
             else if (i >= 2 || i > 1) {
-
+                score = score -1
                 console.log(`${i - 1} turn are left`);
 
                 if (randomNumber <= 5) {
@@ -72,7 +74,10 @@ let numFunc = async () => {
             }
 
             else {
+                score = score -2
                 console.log(Chalk.redBright(`Sorry you loose :(`));
+                console.log(Chalk.redBright(`Your score is ${score}`));
+                
             }
         }
     }
@@ -82,6 +87,7 @@ let numFunc = async () => {
 let again = async () => {
     do {
         await numFunc()
+        score = score + 5;
         var repeat = await inquirer.prompt({
             type: "input",
             name: "restart",
